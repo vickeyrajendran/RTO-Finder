@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTO Finder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <main>
+        <div class="h-64 bg-green-200">
+            <ul class="font-bold uppercase flex space-x-4 justify-end p-5 text-sm">
+                <li class="hover:text-blue-500">About</li>
+                <li class="hover:text-blue-500">GitHub</li>
+            </ul>
+            <div class="flex flex-col  items-center space-y-5">
+                <h1 class="font-bold">RTO Finder</h1>
+                <div class="relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="20" viewBox="0 0 24 24" class="absolute top-5 left-1  text-red-800"><path fill="currentColor" 
+                    d="m18.031 16.617l4.283 4.282l-1.415 1.415l-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9s9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7c-3.868 0-7 3.132-7 7c0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"/></svg>
+                    <input type="search" placeholder="enter vehicle number" class="text-sm px-8 py-5 rounded uppercase placeholder:normal-case tracking-widest" >
+                </div>
+    
+            </div> 
+        </div>
+             <!-- m-10= margin -->
+               <!-- results starts -->
+        <div class=" hidden bg-white m-10 shadow p-5 rounded" id="resultSection">
+            <span class="text-xl">Your query:</span>
+            <table class="my-5 text-sm w-full" >
+                <tbody>
+                    <tr>
+                    <td class="border p-2 rounded font-semibold">Id</td>
+                    <td class="border p-2 rounded" id="rtoId">1</td>
+                   </tr>
+                   <tr>
+                    <td class="border p-2 rounded font-semibold">Rto_code</td>
+                    <td class="border p-2 rounded" id="rtoCode">1</td>
+                   </tr>
+                   <tr>
+                    <td class="border p-2 rounded font-semibold">Location</td>
+                    <td class="border p-2 rounded" id="rtoLocation">1</td>
+                   </tr>
+                   <tr>
+                    <td class="border p-2 rounded font-semibold">Type</td>
+                    <td class="border p-2 rounded" id="rtoType">1</td>
+                   </tr>
+                   <tr>
+                    <td class="border p-2 rounded font-semibold">District</td>
+                    <td class="border p-2 rounded" id="rtoDistrict">dindigul</td>
+                   </tr>
+                   
+                </tbody>
+
+
+            </table>
+    </div>
+    </main>
+   
+  
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
