@@ -27,6 +27,7 @@ if(finded){
 }
 else{
     resultSectionEl.classList.add('hidden')
+     alert('Oops! Dont put space between TN and RTO code or wrong RTO Code')
 }
 
 
